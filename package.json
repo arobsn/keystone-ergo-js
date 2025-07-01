@@ -1,20 +1,20 @@
 {
-  "name": "@arobsn/tslib-template",
+  "name": "@arobsn/keystone-ergo-js",
   "version": "0.1.0",
-  "description": "A modern and minimal TypeScript library template",
+  "description": "A custom Ergo transaction serializer for Keystone hardware wallets",
   "author": "Alison Oliveira <arobsn@proton.me>",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "license": "MIT",
-  "homepage": "https://github.com/arobsn/tslib-template#readme",
+  "homepage": "https://github.com/arobsn/keystone-ergo-js#readme",
   "bugs": {
-    "url": "https://github.com/arobsn/tslib-template/issues"
+    "url": "https://github.com/arobsn/keystone-ergo-js/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arobsn/tslib-template.git"
+    "url": "git+https://github.com/arobsn/keystone-ergo-js.git"
   },
   "type": "module",
   "main": "./dist/index.js",
@@ -55,5 +55,10 @@
     "esm",
     "modern",
     "minimal"
-  ]
+  ],
+  "dependencies": {
+    "@fleet-sdk/common": "^0.10.0",
+    "@fleet-sdk/crypto": "^0.10.0",
+    "@fleet-sdk/serializer": "^0.10.0"
+  }
 }
