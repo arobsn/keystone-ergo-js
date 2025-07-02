@@ -1,5 +1,5 @@
 {
-  "name": "@arobsn/keystone-ergo-js",
+  "name": "keystone-ergo-js",
   "version": "0.1.0",
   "description": "A custom Ergo transaction serializer for Keystone hardware wallets",
   "author": "Alison Oliveira <arobsn@proton.me>",
