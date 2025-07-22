@@ -88,8 +88,10 @@ function getDistinctTokenIds(outputs: readonly BoxCandidate<Amount>[]) {
   return Array.from(tokenIds);
 }
 
-export function deserializeTransaction<T extends Transaction>(input: ByteInput): T {
-  const reader = new SigmaByteReader(input);
+export function deserializeTransaction<T extends Transaction>(
+  input: ByteInput | SigmaByteReader
+): T {
+  const reader = input instanceof SigmaByteReader ? input : new SigmaByteReader(input);
 
   const inputs = reader.readArray(readInput);
   const id = computeId(reader, inputs);
